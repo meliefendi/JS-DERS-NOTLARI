@@ -16,8 +16,8 @@
 // 4 50- 84 aralığındaysa CC - GEÇTİNİZ! yazdıralım.
 // 5 85-100 aralığındaysa Notunuz AA yazdıralım.
 
-// var vize = 70;
-// var final = 30;
+var vize = Math.sign(Math.random()*100);
+var final = Math.sign(Math.random()*100);
 
 // var ortalama = (vize * 0.3) + (final * 0.7);
 
