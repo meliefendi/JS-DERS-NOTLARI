@@ -74,4 +74,27 @@ var final = Math.sign(Math.random()*100);
 // return alert("Girdiğiniz değerleri kontrol ediniz");
 // };
 // vkiHesapla(weight, height);
+////////////////////////////////////////////
+function bmiCalculator(weight, height) {
+
+    var bmi = weight / (height * height);
+    //height*height yerine math.pow(height, 2); yazılabilir
+    var vki = Math.floor(Math.round(bmi));
+   
+    if (vki < 18.5) {
+     alert("Vücut kitle indeksi: " + vki + "--> Zayıf");
+    } else if (vki < 25) {
+     alert("Vücut kitle indeksi: " + vki + "--> Normal");
+    } else if (vki < 30) {
+     alert("Vücut kitle indeksi: " + vki + "--> Fazla Kilolu");
+    } else if (vki < 35) {
+     alert("Vücut kitle indeksi: " + vki + "--> 1. derece obez");
+    } else if (vki < 40) {
+     alert("Vücut kitle indeksi: " + vki + "--> 2. derece obez");
+    } else {
+     alert("Vücut kitle indeksi: " + vki + "--> 3. derece obez");
+    }
+  }
+   
+  bmiCalculator(75, 1.77);
 
