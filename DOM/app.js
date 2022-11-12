@@ -69,4 +69,27 @@ document.getElementById("length").innerHTML = add.classList.length;
 
 // document.getElementById("length").innerHTML = div.classList.length;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+burda da dom eventine click beriyoruz ve tıklanan bilginin neresi veya içeriğine ulaşabiliyoruz
+let greeting = document.getElementById("greeting")
 
+greeting.addEventListener("click",domClick);
+
+function domClick(){
+    console.log("tıklandı") //tıklandı
+    console.log(this) //<h1 id="greeting">Kodluyoruz - Front-End 101</h1>
+  console.log(this.innerHTML) //Kodluyoruz Front-End
+   console.log(this.innerHTML = "içeriği istediğimiz gibi değiştiriyoruz")
+   console.log(this.style.color = "red") //,çeriği kırmızı yapar
+  this.style.color = "red //bu da konsala yazmadan yazıyı kırmızı yapar.
+  
+this.style.color == "red" ? this.style.color = "black" : this.style.color = "red" //burda da toggle varmış gibi her tıklandığında değişim gösterir.yani kırmızıysa siyah yapar, siyahsa kırmızı yapar.
+  
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ve toggle kullanımı :
+
+// let greeting = document.getElementById("greeting")
+
+// greeting.addEventListener("click",function(){
+//     greeting.classList.toggle("text-primary")
+// })
