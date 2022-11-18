@@ -1,0 +1,34 @@
+Input İçerisinden Değer Almak
+Bu yazımızda input içerisinden değer almayı inceleyeceğiz. Öncelikle input oluşturmak ile başlayalım.
+
+Input Oluşturma
+Dinamik olarak input oluşturmak için;
+
+var myInput=document.createElement("input");
+Input'umuzu oluşturduktan sonra gerekli olan özellik eklemelerini yapıyoruz.
+
+myInput.setAttribute("id", "inputumuz");
+myInput.setAttribute("type","text");
+myInput.setAttribute("value","Buraya Yazın");
+Böylece input ve özellikleri oluşturuldu. Şimdi HTML içine bu input'u yerleştiriyoruz.
+
+1.adım
+
+Body içine bir div oluşturalım. (Daha sonra input'u buraya atayacağız.)
+
+var myDiv = document.createElement("div"); 
+   
+şeklinde yapabiliriz.
+
+2.adım
+
+appendChild fonksiyonu ile input'u bu div'e ekleyelim.
+
+myDiv.appendChild(myInput);
+Input Değerini Alma
+Artık input'umuz oluştu ve değerini alabiliriz.
+
+var inputDeger = document.getElementById("inputumuz").value;
+Değeri alert olarak ekranda göstermek için;
+
+window.alert(inputDeger)  // Değerimiz burada yazacak
